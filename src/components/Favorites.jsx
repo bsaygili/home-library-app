@@ -3,7 +3,8 @@ import { useContextApi } from "../context/ContextApi";
 
 const Favorites = () => {
   const { favorites, addToFavorites, removeFromFavorites } = useContextApi();
-  console.log(favorites);
+
+  const nonImage = "../images/sadness.jpg";
   const favoritesCheck = (id) => {
     const boolean = favorites.some((book) => book.id === id);
     return boolean;
@@ -34,10 +35,12 @@ const Favorites = () => {
           </div>
         ))
       ) : (
-        <>
+        <div className="non-favorites">
           <p>You don't have favorite books yet</p>
-          <img src="./images/sad-astronaut" alt="sadness" />
-        </>
+          <div>
+            <img src="../images/sadness.jpg" alt="nonFavorites" />
+          </div>
+        </div>
       )}
     </div>
   );

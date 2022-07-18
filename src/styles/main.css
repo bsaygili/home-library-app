@@ -131,6 +131,24 @@ h4 {
   background-color: #4158d0;
 }
 /* Favorites */
+.non-favorites {
+  width: 788px;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.non-favorites p {
+  font-size: 32px;
+  margin-right: var(--mb-3);
+  color: #ffcc70;
+}
+.non-favorites img {
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 
 /* Footer Style */
 .footer {
